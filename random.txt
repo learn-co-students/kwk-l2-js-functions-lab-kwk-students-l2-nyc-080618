@@ -1,0 +1,34 @@
+ if (start > destination) {
+    var blocks = start - destination; 
+    var feet = blocks * 264; 
+    var foot = feet - 400; 
+      if (foot < 400) {
+        return  0; 
+      }
+      else if (foot > 400 && foot < 2000) {
+        return foot * 0.02; 
+      }
+      else if (foot > 2000 && foot < 2500) {
+        return 25; 
+      }
+      else if (foot > 2500) {
+        return 'cannot travel that far'; 
+      }
+  }
+  else if  (destination > start) {
+    var block = destination - start; 
+    var feets = block * 264; 
+    var foots = feets - 400; 
+      if (foots < 400) {
+        return  0; 
+      }
+      else if (foots > 400 && foots < 2000) {
+        return foots * 0.02; 
+      }
+      else if (foots > 2000 && foots < 2500) {
+        return 25; 
+      }
+      else if (foots > 2500) {
+        return 'cannot travel that far'; 
+      }
+  }
